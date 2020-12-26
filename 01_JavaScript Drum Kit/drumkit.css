@@ -1,0 +1,41 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("img/background.jpg");
+}
+#kit-drum {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+}
+.key {
+  width: 100px;
+  height: 70px;
+  margin: 0 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.07s;
+  border: solid 3px #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 10px #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+span {
+  margin-left: 10px;
+  color: #d6fa09;
+}
